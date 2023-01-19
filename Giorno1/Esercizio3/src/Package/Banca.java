@@ -1,5 +1,8 @@
 package Package;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Banca {
 	private static final Logger Logger = LoggerFactory.getLogger(Banca.class);
 	
@@ -17,7 +20,7 @@ public class Banca {
 			e.printStackTrace();
 		}
 
-		ContoOnLine conto2 = new ContoOnLine("Rossi Luigi", 50350.0, 1500);
+		ContoOnline conto2 = new ContoOnline("Rossi Luigi", 50350.0, 1500);
 
 		conto2.stampaSaldo();
 
